@@ -3,15 +3,17 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="Author" content="Jose Garcia, Yangmei Lu, Khadija Sow" />
+    <meta name="Description" content="DOM II Assignment" />
     <title>Grid Maker</title>
     <link rel="stylesheet" href="style.css" />
     <script defer src="main.js"></script>
   </head>
   <body>
-    <!-- Please feel free to change the HTML as you see fit! This is just a starting point. -->
     <div id="root">
       <h1>Grid Maker</h1>
-      <table>
+
+      <table id="grid">
         <tbody>
           <tr>
             <td></td>
@@ -30,15 +32,22 @@
           </tr>
         </tbody>
       </table>
+
       <div>
         <button id="add-row">Add Row</button>
-        <button id="add-column">Add Column</button>
-        <select id="color-select">
+        <button id="add-col">Add Column</button>
+        <button id="remove-row">Remove Row</button>
+        <button id="remove-col">Remove Column</button>
+
+        <select id="color-picker">
           <option value="red">Red</option>
           <option value="blue">Blue</option>
+          <option value="green">Green</option>
         </select>
-        <button id="fill-grid">Fill Grid</button>
-        <button id="clear-grid">Clear Grid</button>
+
+        <button id="fill-all">Fill All</button>
+        <button id="fill-uncolored">Fill Uncolored</button>
+        <button id="clear">Clear</button>
       </div>
     </div>
   </body>
